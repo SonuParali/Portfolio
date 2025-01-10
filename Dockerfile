@@ -4,8 +4,8 @@ FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/
 COPY style.css /usr/share/nginx/html/
 
-# Expose port 5173
-EXPOSE 5173
+# Expose port 80
+EXPOSE 80
 
 # Start nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
